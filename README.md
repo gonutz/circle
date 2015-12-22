@@ -5,8 +5,8 @@ Golang library to compute a least square circle fit
 This package implements a Circle Least Square Fit for a
 list of 2D-coordinates
 
-  ->        x1, x2, x3, x4, x5 ...
-  x  =      y1, y2, y3, y4, y5 ...
+    ->        x1, x2, x3, x4, x5 ...
+    x  =      y1, y2, y3, y4, y5 ...
  so that the resulting circle is a "best fit to the points given.
 
  The only exported function is
@@ -24,7 +24,7 @@ list of 2D-coordinates
 
  Implemented following the paper:
 
- Least-Squares Circle Fit by R. Bullock, October 24, 2006 10:22 am MDT
+  Least-Squares Circle Fit by R. Bullock, October 24, 2006 10:22 am MDT
 
  Caveats:
 
