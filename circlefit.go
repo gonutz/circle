@@ -63,7 +63,7 @@ func calcSuuu(in []float64) float64 {
 
 func calcSuv(in1 []float64, in2 []float64) float64 {
 	sum := 0.0
-	for k, _ := range in1 {
+	for k := range in1 {
 		sum = sum + in1[k]*in2[k]
 	}
 	return sum
@@ -71,7 +71,7 @@ func calcSuv(in1 []float64, in2 []float64) float64 {
 
 func calcSuvv(in1 []float64, in2 []float64) float64 {
 	sum := 0.0
-	for k, _ := range in1 {
+	for k := range in1 {
 		sum = sum + in1[k]*in2[k]*in2[k]
 	}
 	return sum
@@ -86,10 +86,9 @@ func calc_u(in []float64, bar float64) []float64 {
 	return out
 }
 
-
 // CalcLeastSquareCircleFit computes a least square fit circle for a list of 2d-coordinates.
-// It takes the x and y coordinates as arguments. Obviously the two 
-// argument arrays must have the same length. 
+// It takes the x and y coordinates as arguments. Obviously the two
+// argument arrays must have the same length.
 // The function returns three values: The x,y location of the circle center
 // and the radius of the circle.
 func CalcLeastSquareCircleFit(x []float64, y []float64) (float64, float64, float64) {
