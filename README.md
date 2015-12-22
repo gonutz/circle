@@ -38,3 +38,6 @@ You can find it with some googling.
  But I didn't check out how this can be done. Perhaps
  if you supply not enough points or all the points are identical; it's definitely
  a pathological case.
+
+![Graph](https://github.com/StefanSchroeder/LeastSquareCircleFit/blob/master/demo/least.png?raw=true)
+
