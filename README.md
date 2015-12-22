@@ -1,6 +1,8 @@
 # LeastSquareCircleFit
 Golang library to compute a least square circle fit
 
+[![GoDoc](https://godoc.org/github.com/StefanSchroeder/LeastSquareCircleFit?status.png)](https://godoc.org/github.com/StefanSchroeder/LeastSquareCircleFit)
+
 
 This package implements a Circle Least Square Fit for a
 list of 2D-coordinates
