@@ -77,7 +77,7 @@ func calcSuvv(in1 []float64, in2 []float64) float64 {
 	return sum
 }
 
-func calc_u(in []float64, bar float64) []float64 {
+func calcU(in []float64, bar float64) []float64 {
 	out := make([]float64, len(in))
 
 	for k, v := range in {
@@ -98,8 +98,8 @@ func CalcLeastSquareCircleFit(x []float64, y []float64) (float64, float64, float
 	xbar := bar(x)
 	ybar := bar(y)
 
-	u := calc_u(x, xbar)
-	v := calc_u(y, ybar)
+	u := calcU(x, xbar)
+	v := calcU(y, ybar)
 
 	suu := calcSuu(u)
 	suv := calcSuv(u, v)
