@@ -32,7 +32,7 @@ list of 2D-coordinates
 
 You can find it with some googling.
 
- # Caveats
+Caveats
 
  There are some divisions involved which may provoke a division by zero error.
  But I didn't check out how this can be done. Perhaps
