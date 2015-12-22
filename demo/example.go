@@ -10,7 +10,7 @@ func main() {
 
 	xc, yc, r := least.CalcLeastSquareCircleFit(x, y)
 
-	for i, _ := range x {
+	for i := range x {
 		fmt.Printf("%v %v # data\n", x[i], y[i])
 	}
 	fmt.Printf("\n\n%v %v # center\n\n\n", xc, yc)
@@ -21,4 +21,3 @@ func main() {
 	}
 	fmt.Printf("\n\n%v # radius\n\n\n", r)
 }
-
