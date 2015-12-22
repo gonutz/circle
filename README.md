@@ -32,14 +32,15 @@ list of 2D-coordinates
 
 You can find it with some googling.
 
- ## Caveats
+ # Caveats
 
  There are some divisions involved which may provoke a division by zero error.
  But I didn't check out how this can be done. Perhaps
  if you supply not enough points or all the points are identical; it's definitely
  a pathological case.
 
-In this graph you can see the data points in blue and the computed circle in purple. 
+In this graph you can see the data points from the example (in the demo folder)
+in blue and the computed circle in purple.
 
 
 ![Graph](https://github.com/StefanSchroeder/LeastSquareCircleFit/blob/master/demo/least.png?raw=true)
