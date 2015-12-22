@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import least "LeastSquareCircleFit"
+import least "github.com/StefanSchroeder/LeastSquareCircleFit"
 import "math"
 
 func main() {
