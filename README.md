@@ -7,7 +7,8 @@ list of 2D-coordinates
 
     ->        x1, x2, x3, x4, x5 ...
     x  =      y1, y2, y3, y4, y5 ...
- so that the resulting circle is a "best fit to the points given.
+
+ so that the resulting circle is a "best fit" to the points given.
 
  The only exported function is
 
@@ -24,11 +25,13 @@ list of 2D-coordinates
 
  Implemented following the paper:
 
-  Least-Squares Circle Fit by R. Bullock, October 24, 2006 10:22 am MDT
+    Least-Squares Circle Fit by R. Bullock, October 24, 2006 10:22 am MDT
+
+You can find it with some googling.
 
  Caveats:
 
  There are some divisions involved which may provoke a division by zero error.
- But I didn't take the time to figure out how this can be done. Perhaps
+ But I didn't check out how this can be done. Perhaps
  if you supply not enough points or all the points are identical; it's definitely
  a pathological case.
