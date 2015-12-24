@@ -15,7 +15,7 @@ list of 2D-coordinates
 
  The only exported function is
 
- CalcLeastSquareCircleFit
+    xCoordCenter, yCoordCenter, radius := CalcLeastSquareCircleFit(xArray, yArray)
 
  which takes two arrays as arguments: the x-coords in the first
  and the y-coords in the second; it returns three float64:
