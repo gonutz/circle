@@ -1,23 +1,23 @@
 /*
-Package circle implements a circle least square fit to find the circle that best
+Package fit implements a circle least square fit to find the circle that best
 fits a list of 2D points.
 
 See this paper for reference:
 
 Least-Squares Circle Fit by Randy Bullock, 2006
 */
-package circle
+package fit
 
 import (
 	"errors"
 	"math"
 )
 
-// Fit computes a least square fit circle for a list of 2D-points. It takes the
-// x and y coordinates as arguments. The xs and ys slices must have the same
+// Circle computes a least square fit circle for a list of 2D-points. It takes
+// the x and y coordinates as arguments. The xs and ys slices must have the same
 // length. The function returns the center and radius of the circle that best
 // fits the given points.
-func Fit(x, y []float64) (centerX, centerY, radius float64, err error) {
+func Circle(x, y []float64) (centerX, centerY, radius float64, err error) {
 	if len(x) != len(y) {
 		err = errors.New("number of x and y coordinates must be the same")
 		return

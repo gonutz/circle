@@ -1,10 +1,10 @@
-package circle_test
+package fit_test
 
 import (
 	"testing"
 
 	"github.com/gonutz/check"
-	"github.com/gonutz/circle"
+	"github.com/gonutz/fit"
 )
 
 func TestWeNeedAtLeast3PointsWithSameXAndYCounts(t *testing.T) {
@@ -20,7 +20,7 @@ func TestWeNeedAtLeast3PointsWithSameXAndYCounts(t *testing.T) {
 
 func TestCircleFromThreePoints(t *testing.T) {
 	checkCircle := func(xs, ys []float64) {
-		x, y, r, err := circle.Fit(xs, ys)
+		x, y, r, err := fit.Circle(xs, ys)
 		check.Eq(t, err, nil)
 		check.Eq(t, x, 0)
 		check.Eq(t, y, 0)
@@ -51,7 +51,7 @@ func TestCircleFromThreePoints(t *testing.T) {
 func TestCircleFromFourPoints(t *testing.T) {
 	// Points (0,1) (1,0) (0,-1) (-1,0) form a circle of radius 1 around the
 	// origin.
-	x, y, r, err := circle.Fit([]float64{0, 1, 0, -1}, []float64{1, 0, -1, 0})
+	x, y, r, err := fit.Circle([]float64{0, 1, 0, -1}, []float64{1, 0, -1, 0})
 	check.Eq(t, err, nil)
 	check.Eq(t, x, 0)
 	check.Eq(t, y, 0)
@@ -69,6 +69,6 @@ func TestLineIsNotACircle(t *testing.T) {
 
 func checkFail(t *testing.T, xs, ys []float64) {
 	t.Helper()
-	_, _, _, err := circle.Fit(xs, ys)
+	_, _, _, err := fit.Circle(xs, ys)
 	check.Neq(t, err, nil)
 }

@@ -1,4 +1,4 @@
-module github.com/gonutz/circle
+module github.com/gonutz/fit
 
 go 1.11
 
